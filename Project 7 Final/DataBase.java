@@ -38,7 +38,7 @@ public class DataBase {
     public void addFreemium(Freemium freemium) {
         freemiums.add(freemium);
     }
-
+//Update Methods
     public void updateMagazine(Magazine magazine, int index) {
         if (index >= 0 && index < magazines.size()) {
             magazines.set(index, magazine);
@@ -56,7 +56,7 @@ public class DataBase {
             freemiums.set(index, freemium);
         }
     }
-
+//Remove Methods
     public void removeMagazine(Magazine magazine) {
         magazines.remove(magazine);
     }
@@ -68,7 +68,7 @@ public class DataBase {
     public void removeFreemium(Freemium freemium) {
         freemiums.remove(freemium);
     }
-
+//Search Methods
     public Magazine searchMagazine(String name) {
         return magazines.stream()
                 .filter(m -> m.getName().equalsIgnoreCase(name))
